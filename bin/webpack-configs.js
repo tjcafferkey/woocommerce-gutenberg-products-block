@@ -732,6 +732,7 @@ const getStylingConfig = ( options = {} ) => {
 									}
 
 									return (
+										'@use "sass:math"; ' +
 										'@import "_colors"; ' +
 										'@import "_variables"; ' +
 										'@import "_breakpoints"; ' +

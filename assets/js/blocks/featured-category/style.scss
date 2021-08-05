@@ -107,7 +107,7 @@
 	// Apply max-width to floated items that have no intrinsic width
 	&.alignleft,
 	&.alignright {
-		max-width: $content-width / 2;
+		max-width: math.div($content-width, 2);
 		width: 100%;
 	}
 
