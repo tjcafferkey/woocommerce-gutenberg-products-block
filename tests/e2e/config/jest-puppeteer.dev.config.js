@@ -1,3 +1,8 @@
+/**
+ * External dependencies
+ */
+import { launchArgs } from 'puppeteer-testing-library';
+
 module.exports = {
 	launch: {
 		slowMo: process.env.PUPPETEER_SLOWMO ? false : 50,
@@ -11,5 +16,6 @@ module.exports = {
 		},
 		// Required for the logged out and logged in tests so they don't share app state/token.
 		browserContext: 'incognito',
+		launch: launchArgs(),
 	},
 };
